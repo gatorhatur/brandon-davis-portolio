@@ -14,8 +14,9 @@
     margin: 0;
 }
 
-a {
+header a, footer a {
     text-decoration: none;
+    color: var(--primary-color)
 }
 
 /* Header Start */
@@ -72,6 +73,7 @@ header nav ul li {
     display: flex;
     justify-content: right;
     background-image: url("");
+    background-size: cover;
 }
 
 .hero h2 {
@@ -146,6 +148,10 @@ section h1, footer h1 {
 footer {
     display: flex;
     justify-content: space-between;
+}
+
+footer a {
+    color: var(--secondary-color);
 }
 
 footer nav {
