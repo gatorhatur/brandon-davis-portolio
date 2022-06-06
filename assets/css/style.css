@@ -66,6 +66,20 @@ header nav ul li {
 
 /* Header End */
 
+.hero {
+    background: var(--primary-color);
+    color: var(--tertiary-color);
+    display: flex;
+    justify-content: right;
+    background-image: url("");
+}
+
+.hero h2 {
+    text-align: center;
+    padding: 10px;
+    margin-right: 5%;
+}
+
 .content article {
     margin: 20px 0;
     width: 95%;
