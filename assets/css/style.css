@@ -1,0 +1,85 @@
+:root {
+    --primary-color: rgb(109, 199, 199);
+    --secondary-color: rgb(1, 1, 63);
+    --tertiary-color: rgb(83, 83, 83);
+
+    --list-font-size: 24px;
+    --borders: 3px solid;
+}
+
+* {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header Start */
+
+header {
+    background: var(--tertiary-color);
+}
+
+header h1 {
+    background: var(--primary-color);
+    color: var(--tertiary-color);
+    font-size: 50px;
+    display: inline-block;
+}
+
+header nav {
+    color: var(--primary-color);
+    font-weight: lighter;
+    float: right;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    border-bottom: var(--borders) var(--primary-color);
+    font-size: var(--list-font-size);
+    display: inline-block;
+}
+
+/* Header End */
+
+section h1, footer h1 {
+    font-size: 50px;
+    color: var(--secondary-color);
+    border-right: var(--borders) var(--secondary-color);
+    display: inline-block;
+    padding: 5px;
+}
+
+.about-me p {
+    color: var(--secondary-color);
+    display: inline-block;
+}
+
+.projects {
+    display: inline-block;
+}
+
+.project {
+    border: var(--borders) var(--primary-color);
+    width: 200px;
+    height: 200px;
+}
+
+.project h3 {
+    color: var(--tertiary-color);
+    background: var(--primary-color);
+}
+
+footer nav li {
+    color: var(--secondary-color);
+    border-bottom: var(--borders) var(--secondary-color);
+    font-size: var(--list-font-size);
+    font-weight: lighter;
+}
