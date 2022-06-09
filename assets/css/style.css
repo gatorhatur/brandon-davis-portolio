@@ -78,7 +78,8 @@ header nav ul li {
     justify-content: right;
     background-image: url("../images/aliaksei-lepik-wvl253w-KrY-unsplash.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: 20%;
+    background-attachment: fixed;
     height: 200px;
     position: relative;
 }
@@ -267,19 +268,35 @@ footer nav li {
         border-bottom: var(--borders);
     }
 
-    .content article {
+    .content article, footer {
         margin: 20px;
-        width: 100%;
+        width: auto;
     }
 
     .about-me, .work, footer {
         flex-direction: column;
     }
 
-    .project-container{
+    .project-container, footer nav{
         width: 100%;
         justify-content: center;
     }
+
+    .margin-left{
+        margin-left: 0;
+    }
+
+    .margin-right{
+        margin-right: 0;
+    }
+
+    .projects, .about-me p {
+        width: auto;
+        margin-top: 20px;
+    }
+
+
+
 
     
 
