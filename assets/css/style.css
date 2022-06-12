@@ -46,26 +46,26 @@ header h1 {
 header nav {
     color: var(--primary-color);
     font-weight: lighter;
-    display: flex; /*test removal*/
-    flex-wrap: wrap;
+    /* display: flex; test removal
+    flex-wrap: wrap; */
     justify-content: space-between;
     margin: 1.5% 5% 1.5% 0;
 }
 
 header nav ul, footer nav ul {
     list-style: none;
-    display: flex;
+    display: flex; 
     flex-wrap: wrap; /*test removal*/
     justify-content: space-between;
     align-content: center;
     /* align-items: center; */
-    /* margin: 1.5% 5% 1.5% 0; */
+    margin: 1.5% 0 1.5% 0;
 }
 
 header nav ul li {
     border-bottom: var(--borders) var(--primary-color);
     font-size: var(--list-font-size);
-    display: inline-block; /*Test removal*/
+    display: inline-block; 
     padding: 5px 10px;
     margin: 10px;
 }
@@ -105,7 +105,7 @@ section h1, footer h1 {
     font-size: 50px;
     color: var(--secondary-color);
     border-right: var(--borders) var(--secondary-color);
-    display: inline-block; /*test removal*/
+    /* display: inline-block; test removal */
     padding: 5px 10px;
     text-align: right;
     width: var(--content-header-width);   
@@ -205,7 +205,7 @@ footer a {
 footer nav {
     width: var(--content-width);
     padding: 0 10px;
-    flex-wrap: wrap;/*test removal*/
+    /* flex-wrap: wrap;test removal */
     justify-content: space-between;
     margin: 1.5% 5% 1.5% 0;
 }
@@ -215,9 +215,9 @@ footer nav li {
     border-bottom: var(--borders) var(--secondary-color);
     font-size: var(--list-font-size);
     font-weight: lighter;
-    display: flex;/*test removal*/
+    /* display: flex;test removal */
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     padding: 3px 10px;
     margin: 10px;
 }
@@ -236,18 +236,24 @@ footer nav li {
     }
 
     header h1 {
-        background: none;
-        color: var(--primary-color);
-        margin: 1%;
+        margin: 0;
         padding: 5px;
+        width: -webkit-fill-available;
+        text-align: center;
     }
 
     header nav {
         margin: 1%;
+        justify-content: space-evenly;
     }
 
     .hero{
         height: 150px;
+        justify-content: center;
+    }
+
+    .hero h2 {
+        margin: 0;
     }
 
     section h1, footer h1{
@@ -258,16 +264,18 @@ footer nav li {
 @media screen and (max-width: 575px){
 
     .primary-project{
-        height: 200px;
+        height: 150px;
     }
 
     section h1, footer h1{
         font-size: 32px;
         width: 100%;
-        text-align: center;
+        text-align: left;
         border-right: none;
         border-bottom: var(--borders);
+        padding: inherit;
     }
+
 
     .content article, footer {
         margin: 20px;
@@ -296,18 +304,27 @@ footer nav li {
     .projects, .about-me p {
         width: auto;
         margin-top: 20px;
+        padding: inherit;
     }
 
     footer nav {
-        margin: 1.5% 5%;
+        margin: 0;
         width: auto;
+        padding: 0;
+
     }
 
+    /* need to fully align to left, probably get rid of the margins */
     footer nav ul {
         flex-direction: column;
-        align-items: center;
+        align-items: baseline;
+        align-content: baseline;
     }
 
+    footer nav ul li {
+        margin: 0;
+        width: fit-content;
+    }
     
 
 }
