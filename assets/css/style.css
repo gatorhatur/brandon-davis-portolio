@@ -19,12 +19,14 @@
 }
 
 /* Remove native formatting from anchor tags */
-header a, footer a {
+header a, 
+footer a {
     text-decoration: none;
     color: var(--primary-color)
 }
 
-section h1, footer h1 {
+section h1, 
+footer h1 {
     font-size: 50px;
     color: var(--secondary-color);
     border-right: var(--borders) var(--secondary-color);
@@ -62,7 +64,8 @@ header nav {
     margin: 1.5% 5% 1.5% 0;
 }
 
-header nav ul, footer nav ul {
+header nav ul, 
+footer nav ul {
     list-style: none;
     display: flex; 
     flex-wrap: wrap; /*test removal*/
@@ -221,7 +224,8 @@ footer nav li {
 }
 
 @media screen and (max-width: 980px){
-    section h1, footer h1{
+    section h1, 
+    footer h1{
         font-size: 40px;
     }
 
@@ -265,7 +269,8 @@ footer nav li {
         height: 150px;
     }
 
-    section h1, footer h1{
+    section h1, 
+    footer h1{
         font-size: 32px;
         width: 100%;
         text-align: left;
@@ -280,17 +285,21 @@ footer nav li {
     }
 
 
-    .content article, footer {
+    .content article, 
+    footer {
         margin: 20px;
         width: auto;
     }
 
     /* Stack content when screen is thinner */
-    .about-me, .work, footer {
+    .about-me, 
+    .work, 
+    footer {
         flex-direction: column;
     }
 
-    .project-container, footer nav{
+    .project-container, 
+    footer nav{
         width: 100%;
         justify-content: center;
     }
@@ -304,7 +313,8 @@ footer nav li {
         margin-right: 0;
     }
 
-    .projects, .about-me p {
+    .projects, 
+    .about-me p {
         width: auto;
         margin-top: 20px;
         padding: inherit;
