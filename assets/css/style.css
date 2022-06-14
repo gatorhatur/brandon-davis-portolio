@@ -276,6 +276,10 @@ footer nav li {
         padding: inherit;
     }
 
+    header nav ul li {
+        font-size: 20px;
+    }
+
 
     .content article, footer {
         margin: 20px;
